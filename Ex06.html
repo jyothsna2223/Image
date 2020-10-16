@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Forms</title>
+    <link rel="stylesheet" href="../CSS/mainStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="./Ex01.html">Basics</a>
+            <a href="./Ex02.html">Formatting</a>
+            <a href="./Ex03.html">Tables</a>
+            <a href="./Ex04.html">Images</a>
+            <a href="./Ex05.html">Lists</a>
+            <a href="./Ex06.html">Web Forms</a>
+        </nav>
+    </header>
+    <section>
+        <h2 class="heading">What are Web Forms?</h2>
+        <p>
+            Interactive pages where inputs are taken from the users to register, give inputs to the Application to perform CRUD operations within a Web Application. In most of the cases, Web apps have 80% of content which are read only. Only a few of the documents within a Web site can expect to take inputs from the users. These inputs are in the form of FORMS. Forms are usually processed in a Web server. The processing is done using high level programming languages like PHP, JSP, ASP.NET and Perl.  <br/>
+            However after Nodejs came into picture, JavaScript is also used for processing Web Forms. 
+        </p>
+    </section>
+    <section>
+        <form>
+            <p><input type="text" placeholder="Enter the Name" id="empName" /></p>
+            <p><input type="email" placeholder="Enter the Email" id="empEmail" /></p>
+            <p><input type="date" placeholder="Enter the Date of Birth" id="empDOB" /></p>
+            <p>Enter the Complete Address:
+                <textarea id="empAddress">
+                    
+                </textarea>
+            </p>
+            <p>
+                <datalist id="lstStates">
+                    <option>Arunachal Pradesh</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chandigarh</option>
+                    <option>Chhattisgarh</option>
+                    <option>Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option>Delhi </option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jammu and Kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Lakshadweep</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option> 
+                    <option>Puducherry</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                </datalist>
+                <input type="text" placeholder="Select the State" list="lstStates" />
+
+            <p><input type="tel" placeholder="Enter the Contact No" id="empPhone" /></p>
+            <p>
+                Select the qualification:<br/>
+                <select id="empQualification">
+                    <option>Graduation</option>
+                    <option>Under Graduation</option>
+                    <option>Post Graduation</option>
+                    <option>Pre University</option>
+                    <option>School</option>
+                </select>
+            </p>
+            <p>
+                Billing To: <input type="radio" name="billloc">Home <input type="radio" name="billloc">Office</p>
+            </p>
+            <p>
+                Your other requirements:
+                <input type="checkbox">Swimming Pool
+                <input type="checkbox">Gym
+                <input type="checkbox">Restaurant
+                <input type="checkbox">Coffee Shop
+                <input type="checkbox">Handicraft Shop
+            </p>
+            <p>Rate URself in HTML:
+                <input type="range" min="1" max="10" step="1"/>
+            </p>
+            <button type="button">Register</button>
+        </form>
+    </section>
+</body>
+</html>
